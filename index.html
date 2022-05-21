@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>kb</title>
+		<meta charset="utf-8" />
+		<Link Rel="SHORTCUT ICON" href="main_circle.svg">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/NZ-Plugin/Css/NZ-MsgBox.min.css" />
+		<link rel="stylesheet" href="assets/css/player.css" />
+		
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<table cellpadding="10">
+					<tr>
+						<th colspan="2">节数\日期</th>
+						<th id="w1">一</th>
+						<th id="w2">二</th>
+						<th id="w3">三</th>
+						<th id="w4">四</th>
+						<th id="w5">五</th>
+					</tr>
+				
+					<tr>
+						<th rowspan="5" id="thsx">上午</th>
+						<th>1</th>
+						<th id="w1">语文</th>
+						<th id="w2">数学</th>
+						<th id="w3">地理</th>
+						<th id="w4">英语</th>
+						<th id="w5">语文</th>
+					</tr>
+				
+					<tr>
+						<th>2</th>
+						<th id="w1">英语</th>
+						<th id="w2">历史</th>
+						<th id="w3">政治</th>
+						<th id="w4">物理</th>
+						<th id="w5">物理</th>
+					</tr>
+
+					<tr>
+						<th>3</th>
+						<th id="w1">化学</th>
+						<th id="w2">英语</th>
+						<th id="w3">音乐</th>
+						<th id="w4">化学</th>
+						<th id="w5">数学</th>
+					</tr>
+
+					<tr>
+						<th>4</th>
+						<th id="w1">生物</th>
+						<th id="w2">英语</th>
+						<th id="w3">语文</th>
+						<th id="w4">数学</th>
+						<th id="w5">英语</th>
+					</tr>
+
+					<tr>
+						<th>5</th>
+						<th id="w1">物理</th>
+						<th id="w2">化学</th>
+						<th id="w3">语文</th>
+						<th id="w4">数学</th>
+						<th id="w5">地理</th>
+					</tr>
+				
+					<tr>
+					<th colspan="7"></th>
+					</tr>
+				
+					<tr>
+						<th rowspan="4" id="thsx">下午</th>
+						<th>6</th>
+						<th id="w1">地理</th>
+						<th id="w2">语文</th>
+						<th id="w3">数学</th>
+						<th id="w4">语文</th>
+						<th id="w5">信息</th>
+					</tr>
+				
+					<tr>
+						<th>7</th>
+						<th id="w1">数学</th>
+						<th id="w2">体育</th>
+						<th id="w3">英语</th>
+						<th id="w4">体育</th>
+						<th id="w5">化学</th>
+					</tr>
+
+					<tr>
+						<th>8</th>
+						<th id="w1">自习</th>
+						<th id="w2">物理</th>
+						<th id="w3">班会</th>
+						<th id="w4">地理</th>
+						<th id="w5">社团</th>
+					</tr>
+
+					<tr>
+						<th>9</th>
+						<th id="w1">自习</th>
+						<th id="w2">自习</th>
+						<th id="w3">劳动</th>
+						<th id="w4">体锻</th>
+						<th id="w5">社团</th>
+					</tr>
+				 </table>
+			</div>
+
+		<!-- Player By Wenqi -->
+		<div id="dowebok" class="hide">
+			<div id="player">
+				<div id="player-trackbg"></div>
+				<div id="player-track">
+					<div id="track-name"></div>
+					<div id="album-name"></div>
+					<div id="track-time">
+						<div id="current-time"></div>
+						<div id="track-length"></div>
+					</div>
+					<div id="s-area">
+						<div id="ins-time"></div>
+						<div id="s-hover"></div>
+						<div id="seek-bar"></div>
+					</div>
+				</div>
+				<div id="player-content">
+					<div class="scontrol">
+						<div class="sbutton" id="hide-show">
+							展开<br>--<br>隐藏
+						</div>
+					</div>
+					<div id="album-art">
+						<img src="" class="active" id="album-pic">
+						<div id="buffer-box">加载中...</div>
+					</div>
+					<div id="player-controls">
+						<div class="control">
+							<div class="button" id="play-previous">
+								<i class="fa fa-backward"></i>
+							</div>
+						</div>
+						<div class="control">
+							<div class="button" id="play-pause-button">
+								<i class="fa fa-play"></i>
+							</div>
+						</div>
+						<div class="control">
+							<div class="button" id="play-next">
+								<i class="fa fa-forward"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- BG -->
+			<div id="bgbox">
+				<div class="bg" id="bg"></div>
+			</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/NZ-Plugin/Js/NZ-Drag.min.js"></script>
+			<script src="assets/NZ-Plugin/Js/NZ-MsgBox.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/player.js"></script>
+			<script src="assets/js/tips.js"></script>
+			<!-- <script src="assets/js/sakura.js"></script> -->
+
+	</body>
+</html>
