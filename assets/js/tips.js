@@ -8,16 +8,6 @@ $window.on('load', function() {
     window.setTimeout(sayhi, 1000);
 });
 
-function testfun(){
-    $.NZ_MsgBox.tipsbar({
-        title: "test~"
-        , content: "测试信息！"
-        , type: "info"
-        , tipsort: "bottom"
-        , showtime: 2500
-    });
-    $.NZ_MsgBox.toast({ content: "测试信息长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长", location: "top", showtime: 300000 });
-}
 
 function sayhi(){
     var daytime = date.getHours();
@@ -50,5 +40,5 @@ function sayhi(){
     }else if(day==7){
         day = "今天是周日";
     }
-    $.NZ_MsgBox.toast({ content: day + " ; " + daytime, location: "top", showtime: 6000 });
+    $.NZ_MsgBox.toast({ content: day + " ; " + daytime, location: "bottom", showtime: 6000 });
 }
