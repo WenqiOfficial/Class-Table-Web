@@ -2,8 +2,6 @@ var botton = $("#testbotton"),
     $window = $(window),
     date = new Date();//获取系统当前时间
 
-botton.on('click',testfun);
-
 $window.on('load', function() {
     window.setTimeout(sayhi, 1000);
 });
@@ -13,17 +11,17 @@ function sayhi(){
     var daytime = date.getHours();
     var day = date.getDay();
     if(daytime<6){
-        daytime = "已经凌晨了！勤奋的你也要注意休息了";
+        daytime = "凌晨了！";
     }else if(daytime<11){
-        daytime = "上午好，充满元气加油吧！";
+        daytime = "上午好";
     }else if(daytime<13){
-        daytime = "中午好，吃完午饭小憩一下很不错哦";
+        daytime = "中午好";
     }else if(daytime<16){
-        daytime = "下午好，距离成功就差那么一点点了！";
+        daytime = "下午好";
     }else if(daytime<18){
-        daytime = "傍晚好,努力了一天辛苦了";
+        daytime = "傍晚好";
     }else if(daytime<24){
-        daytime = "天黑了..."
+        daytime = "晚上好"
     }
     if(day==1){
         day = "今天是周一";
@@ -40,5 +38,5 @@ function sayhi(){
     }else if(day==7){
         day = "今天是周日";
     }
-    $.NZ_MsgBox.toast({ content: day + " ; " + daytime, location: "bottom", showtime: 6000 });
+    $.NZ_MsgBox.toast({ content: day + " ， " + daytime, location: "center", showtime: 6000 });
 }
