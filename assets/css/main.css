@@ -28,6 +28,39 @@ body {
 	line-height: 1;
 }
 
+:root {
+	--colors1: white;
+	--colors2: white;
+	--colors3: white;
+	--colors4: white;
+	--colors5: white;
+}
+
+#w1{
+	color: var(--colors1);
+	transition: color 0.5s ease-in-out;
+}
+
+#w2{
+	color: var(--colors2);
+	transition: color 0.5s ease-in-out;
+}
+
+#w3{
+	color: var(--colors3);
+	transition: color 0.5s ease-in-out;
+}
+
+#w4{
+	color: var(--colors4);
+	transition: color 0.5s ease-in-out;
+}
+
+#w5{
+	color: var(--colors5);
+	transition: color 0.5s ease-in-out;
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -556,4 +589,7 @@ input, select, textarea {
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
 			position: fixed;
 			z-index: -1;
+		}
+		.red {
+			color: red;
 		}

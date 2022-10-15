@@ -1,15 +1,21 @@
 var botton = $("#testbotton"),
     $window = $(window),
+    w1 = $("#w1"),
+    w2 = $("#w2"),
+    w3 = $("#w3"),
+    w4 = $("#w4"),
+    w5 = $("#w5"),
     date = new Date();//获取系统当前时间
+var daytime = date.getHours();
+var day = date.getDay();
 
 $window.on('load', function() {
     window.setTimeout(sayhi, 1000);
+    window.setTimeout(todaysclass, 2000);
 });
 
 
 function sayhi(){
-    var daytime = date.getHours();
-    var day = date.getDay();
     if(daytime<6){
         daytime = "凌晨了！";
     }else if(daytime<11){
@@ -39,4 +45,10 @@ function sayhi(){
         day = "今天是周日";
     }
     $.NZ_MsgBox.toast({ content: day + " ， " + daytime, location: "center", showtime: 6000 });
+}
+
+function todaysclass(){
+    var r = document.querySelector(':root');
+    day = 3;
+    r.style.setProperty('--colors'+ day , 'red');
 }
