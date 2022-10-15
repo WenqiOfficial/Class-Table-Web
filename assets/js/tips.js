@@ -49,6 +49,5 @@ function sayhi(){
 
 function todaysclass(){
     var r = document.querySelector(':root');
-    day = 3;
-    r.style.setProperty('--colors'+ day , 'red');
+    r.style.setProperty('--colors'+ day , '#31f15e');
 }
