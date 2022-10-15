@@ -6,8 +6,6 @@ var botton = $("#testbotton"),
     w4 = $("#w4"),
     w5 = $("#w5"),
     date = new Date();//获取系统当前时间
-var daytime = date.getHours();
-var day = date.getDay();
 
 $window.on('load', function() {
     window.setTimeout(sayhi, 1000);
@@ -16,6 +14,8 @@ $window.on('load', function() {
 
 
 function sayhi(){
+    var daytime = date.getHours();
+    var day = date.getDay();
     if(daytime<6){
         daytime = "凌晨了！";
     }else if(daytime<11){
@@ -48,6 +48,7 @@ function sayhi(){
 }
 
 function todaysclass(){
+    var day = date.getDay();
     var r = document.querySelector(':root');
     r.style.setProperty('--colors'+ day , '#31f15e');
 }
